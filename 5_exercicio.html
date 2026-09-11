@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação</title>
+</head>
+<body>
+
+    <p>Digite o primeiro número:</p>
+    <input type="number" id="caixa1">
+
+    <p>Digite o segundo número:</p>
+    <input type="number" id="caixa2">
+
+    <br><br>
+
+    <button>analisar</button>
+
+    <h3></h3>
+
+    <script>
+        let caixa1 = document.querySelector("#caixa1");
+        let caixa2 = document.querySelector("#caixa2");
+        let botao = document.querySelector("button");
+        let resultado = document.querySelector("h3");
+
+        botao.addEventListener("click", function() {
+
+            if (Number(caixa1.value) > Number(caixa2.value)) {
+                resultado.textContent = "O maior número é " + caixa1.value;
+
+            } else if (Number(caixa2.value) > Number(caixa1.value)) {
+                resultado.textContent = "O maior número é " + caixa2.value;
+
+            } else {
+                resultado.textContent = "Os valores são iguais!";
+            }
+
+        });
+    </script>
+
+</body>
+</html>
