@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Digite uma vogal:</p>
+    <input type="text" name="" id="caixa">
+    <p id="resultado"></p>
+    <script>
+        let caixa = document.querySelector("#caixa");
+        let resultado = document.querySelector("#resultado");
+        caixa.addEventListener("change", function(){
+            if(this.value == 'a'){
+                resultado.textContent = 'É vogal';
+            } 
+            else if(this.value == 'e'){
+                resultado.textContent = 'É vogal';
+            } 
+            else if(this.value == 'i'){
+                resultado.textContent = 'É vogal';
+            } 
+            
+             else if(this.value == 'o'){
+                resultado.textContent = 'É vogal';
+
+        } 
+            
+             else if(this.value == 'u'){
+                resultado.textContent = 'É vogal';
+             }
+
+             
+            
+             else {
+                resultado.textContent = 'É consoante';
+            
+
+             } 
+            
+            
+        })
+        
+    </script>
+</body>
+</html>
